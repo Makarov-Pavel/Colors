@@ -86,3 +86,16 @@ function getColorsFromHash() {
   }
   return [];
 }
+
+
+const infoIcon = document.querySelector('.infoIcon')
+const infoText = document.querySelector('.infoText')
+infoIcon.addEventListener('click',e => {
+  
+  if(infoText.style.display === 'none' || !infoText.style.display){
+    infoText.style.display = 'block'
+    
+  } else {
+    infoText.style.display = 'none'
+  }
+})
